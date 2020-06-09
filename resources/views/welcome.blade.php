@@ -20,7 +20,7 @@
                 </button>
                 <div class="collapse navbar-collapse w-100 order-3 dual-collapse2">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Home</a>
                         <a class="nav-item nav-link" href="#">Contact</a>
                         <a class="nav-item nav-link" href="#">Social Media</a>
                     </div>

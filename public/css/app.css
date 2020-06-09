@@ -10024,6 +10024,19 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.bg {
+    /* The image used */
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/jijenge.jpg);
+
+    /* Full height */
+    height: 100vh;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-primary {
   background-color: #3490dc !important;
 }
@@ -10118,6 +10131,11 @@ button.bg-dark:focus {
 
 .bg-transparent {
   background-color: transparent !important;
+}
+
+.bg-transparent.scrolled {
+    background-color:#000 !important;
+    opacity: 0.7;
 }
 
 .border {
