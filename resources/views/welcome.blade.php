@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Jijenge</title>
+        <title>Jijenge Investments</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -14,7 +14,7 @@
     <body>
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent" style="height: 90px">
             <div class="container">
-                <a class="navbar-brand" href="#">Jijenge</a>
+                <a class="navbar-brand" href="#">Jijenge Investments</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -27,6 +27,8 @@
                 </div>
             </div>
         </nav>
+
+
         <div class="bg">
             <div class="row m-0 h-100">
                 <div class="col-lg-6 my-auto" align="center">
@@ -52,7 +54,7 @@
                         <input type="tel" id="phone_number" class="form-control mb-4" placeholder="Phone Number" required>
 
                         <!-- Send button -->
-                        <button class="btn btn-primary btn-block" type="submit">Register</button>
+                        <button class="btn btn-danger btn-block" type="submit">Register</button>
 
                     </form>
                     <!-- Default form contact -->
@@ -61,13 +63,12 @@
         </div>
 
 
-
         <!-- Footer -->
         <div class="footer-custom" style="height: 90vh">
             <div class="container">
                 <div class="m-5">
-                    <h1 style="font-size: 150%">GET IN TOUCH</h1>
-                    <p style="font-size: 250%">
+                    <h1 style="font-size: 250%"><strong>GET IN TOUCH</strong></h1>
+                    <p style="font-size: 150%">
                         I love to listen and I am eagerly waiting to talk to you regarding your concerns. Get in touch with us if you have any queries and I will get back to you as soon as possible.
                     </p>
                 </div>
@@ -90,7 +91,7 @@
                             <textarea id="message" class="form-control mb-4" placeholder="Enter Message" rows="3" required></textarea>
 
                             <!-- Send button -->
-                            <button class="btn btn-primary btn-block" type="submit">Register</button>
+                            <button class="btn btn-danger btn-block" type="submit">Send Message</button>
 
                         </form>
                         <!-- Default form contact -->
@@ -113,45 +114,43 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row h-20 m-5">
-                                <div class="col-md-2">
-                                    <i class="fa fa-envelope" style="font-size: 350%"></i>
-                                </div>
-                                <div class="col-md-10 my-auto">
-                                    <div style="font-size: 125%;font-weight: bold;">
-                                        MAIL US
+
+                            <div class="">
+                                <div class="row h-20 m-5">
+                                    <div class="col-md-2">
+                                        <i class="fa fa-envelope" style="font-size: 350%"></i>
                                     </div>
-                                    <div style="font-size: 125%">
-                                        help@example.com
+                                    <div class="col-md-10 my-auto">
+                                        <div style="font-size: 125%;font-weight: bold;">
+                                            MAIL US
+                                        </div>
+                                        <div style="font-size: 125%">
+                                            ijijenge@gmail.com
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Grid row -->
-                            <div class="row h-20 m-5">
-                                <div class="col-md-2">
-                                    <i class="fa fa-globe" style="font-size: 350%"></i>
-                                </div>
-                                <div class="col-md-10 my-auto">
-                                    <a href="#" style="font-size: 250%"><i class="m-2 fa fa-facebook-f"></i></a>
-                                    <a href="#" style="font-size: 250%"><i class="m-2 fa fa-instagram"></i></a>
-                                    <a href="#" style="font-size: 250%"><i class="m-2 fa fa-twitter"></i></a>
+                                <!-- Grid row -->
+                                <div class="row h-20 m-5">
+                                    <div class="col-md-10 my-auto">
+                                        <a href="https://www.facebook.com/Jijenge-investments-109255720822089/" style="font-size: 250%"><i class="m-2 fa fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b" style="font-size: 250%"><i class="m-2 fa fa-instagram"></i></a>
+                                        <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%"><i class="m-2 fa fa-twitter"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Grid column -->
+                        <!-- Grid column -->
 
+                    </div>
                 </div>
             </div>
+            <!-- Footer -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="margin-bottom: 0; background-color: #FFAB40">© 2020 Copyright:
+                ijijenge@gmail.com
+            </div>
+            <!-- Copyright -->
         </div>
-        <!-- Footer -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            ChelseaNjeri01@gmail.com
-        </div>
-        <!-- Copyright -->
-
-
         <script src="/js/app.js"></script>
         <script>
             $(window).scroll(function(){

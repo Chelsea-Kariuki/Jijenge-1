@@ -10025,13 +10025,13 @@ a.close.disabled {
 }
 
 .bg {
-    /* The image used */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/jijenge.jpg);
+    /*The image used*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jijenge2.jpg);
 
-    /* Full height */
+    /*Full Height*/
     height: 100vh;
 
-    /* Center and scale the image nicely */
+    /*Centre and scale the image nicely*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10114,9 +10114,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-dark {
-  background-color: #343a40 !important;
-}
+
 
 a.bg-dark:hover,
 a.bg-dark:focus,
@@ -13987,11 +13985,6 @@ a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
-  }
-
-  .footer-custom{
-      background-color: #c51f1a ;
-      color: white;
   }
 }
 
