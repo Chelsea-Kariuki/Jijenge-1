@@ -13,15 +13,15 @@
     </head>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent" style="height: 90px">
         <div class="container">
-            <a class="navbar-brand" href="#">Jijenge Investments</a>
+            <a class="navbar-brand" href="#" style="color: #DD2C00; font-size: xx-large"><strong>Jijenge Investments</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse w-100 order-3 dual-collapse2">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                    <a class="nav-item nav-link" href="#">Social Media</a>
+                    <a class="nav-item nav-link" href="#" style="color: #D50000; font-size: large"><strong>Home </strong><span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#" style="color: #D50000; font-size: large"><strong>Contact</strong></a>
+                    <a class="nav-item nav-link" href="#" style="color: #D50000; font-size: large"><strong>Social Media</strong></a>
                 </div>
             </div>
         </div>
@@ -34,9 +34,9 @@
             </div>
             <div class="col-lg-6 my-auto">
                 <!-- Default form contact -->
-                <form class="text-center border border-light p-5 bg-light" action="#!" style="width: 27rem;border-radius: 15px 15px 15px 15px;">
+                <form class="text-center  p-5 bg-light bg-transparent" action="#!" style="width: 27rem;border-radius: 15px 15px 15px 15px;">
 
-                    <p class="h4 mb-4">Register with Us</p>
+                    <p class="h1 mb-4"><strong>Register with Us</strong></p>
 
                     <!-- First Name -->
                     <input type="text" id="first_name" name="first_name" class="form-control mb-4" placeholder="First Name" required>
@@ -59,14 +59,25 @@
         </div>
     </div>
 
-
+    <div class="row m-0">
+            <div class="container ">
+                <div class="section_title mt-5 " style="height: 100vh; text-align: center">
+                    <span class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible;
+                    animation-duration: 1s; animation-delay: 0.3s; font-size: 400%">About Us</span>
+                    <p class="mid_text wow fadeInUp ml-10 mr-10" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible;
+                    animation-duration: 1s; animation-delay: 0.5s; font-size: 200%">Economic growth can be encouraged through the use of sound investments at the business level.</p>
+                    <p class="last_text wow fadeInUp m-10" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible;
+                    animation-duration: 1s; animation-delay: 0.6s; font-size: 200%">We empower individuals to participate in common forms of investment including financial markets (e.g. stocks and bonds), credit (e.g. loans or bonds), assets (e.g. commodities or artwork), and real estate.</p>
+                </div>
+            </div>
+    </div>
 
     <!-- Footer -->
-    <div class="footer-custom" style="height: 90vh">
+    <div class="footer-custom" style="height: 90vh; background-color: black">
         <div class="container">
-            <div class="m-5">
-                <h1 style="font-size: 250%"><strong>GET IN TOUCH</strong></h1>
-                <p style="font-size: 150%">
+            <div>
+                <h1 class="mt-5" style="font-size: 250%; color: whitesmoke"><strong>GET IN TOUCH</strong></h1><hr style="margin-left: 5px; width: 250px">
+                <p style="font-size: 150%; color: whitesmoke">
                     I love to listen and I am eagerly waiting to talk to you regarding your concerns. Get in touch with us if you have any queries and I will get back to you as soon as possible.
                 </p>
             </div>
@@ -144,7 +155,7 @@
         </div>
         <!-- Footer -->
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3" style="margin-bottom: 0; background-color: #FFAB40">© 2020 Copyright:
+        <div class="footer-copyright text-center py-3" style="margin-top: 15px; background-color: #FFAB40; color: whitesmoke">© 2020 Copyright:
             ijijenge@gmail.com
         </div>
         <!-- Copyright -->
