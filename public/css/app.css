@@ -10024,6 +10024,19 @@ a.close.disabled {
   vertical-align: text-top !important;
 }
 
+.bg {
+    /* The image used*/
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/jijenge2.jpg);
+
+    /*Full height*/
+    height: 100vh;
+
+    /*Center and scale the image nicely*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-primary {
   background-color: #3490dc !important;
 }

@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/css/app.css">
 
     </head>
+
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent" style="height: 90px">
         <div class="container">
             <a class="navbar-brand" href="#" style="color: #DD2C00; font-size: xx-large"><strong>Jijenge Investments</strong></a>
@@ -26,35 +27,37 @@
             </div>
         </div>
     </nav>
-    <div class="bg">
-        <div class="row m-0 h-100">
-            <div class="col-lg-6 my-auto" align="center">
-                <h1 style="color: white; font-family: 'Helvetica'; font-size: 400%">Jijenge <br> Investments</h1>
-                <h1 style="color: floralwhite; font-family: 'Brush Script MT'; font-size:400%">The future lies in your hands</h1>
-            </div>
-            <div class="col-lg-6 my-auto">
-                <!-- Default form contact -->
-                <form class="text-center  p-5 bg-light bg-transparent" action="#!" style="width: 27rem;border-radius: 15px 15px 15px 15px;">
 
-                    <p class="h1 mb-4"><strong>Register with Us</strong></p>
+        <div class="bg">
+            <div class="row m-0 h-100">
+                <div class="col-lg-6 my-auto" align="center">
+                    <h1 style="color: white; font-family: 'Helvetica'; font-size: 400%">Jijenge <br> Investments</h1>
+                    <h1 style="color: floralwhite; font-family: 'Brush Script MT'; font-size:400%">The future lies in your hands</h1>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <!-- Default form contact -->
+                    <form class="text-center p-5" action="#!" style="width: 27rem;border-radius: 15px 15px 15px 15px;">
 
-                    <!-- First Name -->
-                    <input type="text" id="first_name" name="first_name" class="form-control mb-4" placeholder="First Name" required>
+                        <p class="h4 mb-4" style="font-size: xx-large"><strong>Register with Us</strong></p>
 
-                    <!-- Last Name -->
-                    <input type="text" id="last_name" name="last_name" class="form-control mb-4" placeholder="Last Name" required>
+                        <!-- First Name -->
+                        <input type="text" id="first_name" name="first_name" class="form-control mb-4" placeholder="First Name" required>
 
-                    <!-- Email -->
-                    <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail" required>
+                        <!-- Last Name -->
+                        <input type="text" id="last_name" name="last_name" class="form-control mb-4" placeholder="Last Name" required>
 
-                    <!-- Phonenumber -->
-                    <input type="tel" id="phone_number" class="form-control mb-4" placeholder="Phone Number" required>
+                        <!-- Email -->
+                        <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail" required>
 
-                    <!-- Send button -->
-                    <button class="btn btn-danger btn-block" type="submit">Register</button>
+                        <!-- Phonenumber -->
+                        <input type="tel" id="phone_number" class="form-control mb-4" placeholder="Phone Number" required>
 
-                </form>
-                <!-- Default form contact -->
+                        <!-- Send button -->
+                        <button class="btn btn-danger btn-block" type="submit">Register</button>
+
+                    </form>
+                    <!-- Default form contact -->
+                </div>
             </div>
         </div>
     </div>
@@ -87,79 +90,78 @@
                 <div class="col-md-6" align="right">
                     <!-- Default form contact -->
                     <form class="text-center border border-light p-5 bg-transparent" action="#!" style="border-radius: 15px 15px 15px 15px;">
+                            <div>
+                                <!-- First Name -->
+                                <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Name" required>
 
-                        <div>
-                            <!-- First Name -->
-                            <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Name" required>
+                                <!-- Email -->
+                                <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail" required>
+                            </div>
 
-                            <!-- Email -->
-                            <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail" required>
-                        </div>
+                            <!-- Phonenumber -->
+                            <textarea id="message" class="form-control mb-4" placeholder="Enter Message" rows="3" required></textarea>
 
-                        <!-- Phonenumber -->
-                        <textarea id="message" class="form-control mb-4" placeholder="Enter Message" rows="3" required></textarea>
-
-                        <!-- Send button -->
-                        <button class="btn btn-danger btn-block" type="submit">Send Message</button>
+                            <!-- Send button -->
+                            <button class="btn btn-danger btn-block" type="submit">Send Message</button>
 
                     </form>
-                    <!-- Default form contact -->
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-6">
-                    <div class="">
-                        <div class="row h-20 m-5">
-                            <div class="col-md-2">
-                                <i class="fa fa-phone-square" style="font-size: 350%"></i>
-                            </div>
-                            <div class="col-md-10 my-auto">
-                                <div style="font-size: 125%;font-weight: bold;">
-                                    CALL ME
-                                </div>
-                                <div style="font-size: 125%">
-                                    +2547-28600576
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="">
-                            <div class="row h-20 m-5">
-                                <div class="col-md-2">
-                                    <i class="fa fa-envelope" style="font-size: 350%"></i>
-                                </div>
-                                <div class="col-md-10 my-auto">
-                                    <div style="font-size: 125%;font-weight: bold;">
-                                        MAIL US
-                                    </div>
-                                    <div style="font-size: 125%">
-                                        ijijenge@gmail.com
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid row -->
-                            <div class="row h-20 m-5">
-                                <div class="col-md-10 my-auto">
-                                    <a href="https://www.facebook.com/Jijenge-investments-109255720822089/" style="font-size: 250%"><i class="m-2 fa fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b" style="font-size: 250%"><i class="m-2 fa fa-instagram"></i></a>
-                                    <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%"><i class="m-2 fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Default form contact -->
                     </div>
                     <!-- Grid column -->
 
+                    <!-- Grid column -->
+                    <div class="col-md-6">
+                        <div class="">
+                            <div class="row h-20 m-5">
+                                <div class="col-md-2">
+                                    <i class="fa fa-phone-square" style="font-size: 350%"></i>
+                                </div>
+                                <div class="col-md-10 my-auto">
+                                    <div style="font-size: 125%;font-weight: bold;">
+                                        CALL ME
+                                    </div>
+                                    <div style="font-size: 125%">
+                                        +2547-28600576
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <div class="row h-20 m-5">
+                                    <div class="col-md-2">
+                                        <i class="fa fa-envelope" style="font-size: 350%"></i>
+                                    </div>
+                                    <div class="col-md-10 my-auto">
+                                        <div style="font-size: 125%;font-weight: bold;">
+                                            MAIL US
+                                        </div>
+                                        <div style="font-size: 125%">
+                                            ijijenge@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid row -->
+                                <div class="row h-20 m-5">
+                                    <div class="col-md-10 my-auto">
+                                        <a href="https://www.facebook.com/Jijenge-investments-109255720822089/" style="font-size: 250%"><i class="m-2 fa fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b" style="font-size: 250%"><i class="m-2 fa fa-instagram"></i></a>
+                                        <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%"><i class="m-2 fa fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
                 </div>
             </div>
+            <!-- Footer -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="margin-bottom: 0; margin-top: 15px; background-color: #FFAB40">© 2020 Copyright:
+                ijijenge@gmail.com
+            </div>
+            <!-- Copyright -->
         </div>
-        <!-- Footer -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3" style="margin-top: 15px; background-color: #FFAB40; color: whitesmoke">© 2020 Copyright:
-            ijijenge@gmail.com
-        </div>
-        <!-- Copyright -->
-
 
         <script src="/js/app.js"></script>
         <script>
@@ -167,6 +169,5 @@
                 $('nav').toggleClass('scrolled', $(this).scrollTop() > 90);
             });
         </script>
-    </div>
-
+    </body>
 </html>
