@@ -10026,7 +10026,7 @@ a.close.disabled {
 
 .bg {
     /*The image used*/
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/jijenge2.jpg);
+    background-image: url("../img/jijenge2.jpg");
 
     /*Full Height*/
     height: 100vh;
@@ -10133,7 +10133,6 @@ button.bg-dark:focus {
 
 .bg-transparent.scrolled {
     background-color:#000 !important;
-    opacity: 0.7;
 }
 
 .border {

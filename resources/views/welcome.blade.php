@@ -64,9 +64,9 @@
 
 
         <!-- Footer -->
-        <div class="footer-custom" style="height: 90vh">
+        <div class="footer-custom" style="height: 100vh;">
             <div class="container">
-                <div class="m-5">
+                <div class="">
                     <h1 style="font-size: 250%"><strong>GET IN TOUCH</strong></h1>
                     <p style="font-size: 150%">
                         I love to listen and I am eagerly waiting to talk to you regarding your concerns. Get in touch with us if you have any queries and I will get back to you as soon as possible.
@@ -132,9 +132,9 @@
                                 <!-- Grid row -->
                                 <div class="row h-20 m-5">
                                     <div class="col-md-10 my-auto">
-                                        <a href="https://www.facebook.com/Jijenge-investments-109255720822089/" style="font-size: 250%"><i class="m-2 fa fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b" style="font-size: 250%"><i class="m-2 fa fa-instagram"></i></a>
-                                        <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%"><i class="m-2 fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/Jijenge-investments-109255720822089/" style="font-size: 250%;color: black"><i class="m-2 fa fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b" style="font-size: 250%;color: black"><i class="m-2 fa fa-instagram"></i></a>
+                                        <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%;color: black"><i class="m-2 fa fa-twitter"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -145,12 +145,12 @@
                 </div>
             </div>
             <!-- Footer -->
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3" style="margin-bottom: 0; background-color: #FFAB40">© 2020 Copyright:
-                ijijenge@gmail.com
-            </div>
-            <!-- Copyright -->
         </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="margin-bottom: 0; background-color: #FFAB40">© 2020 Copyright:
+            ijijenge@gmail.com
+        </div>
+        <!-- Copyright -->
         <script src="/js/app.js"></script>
         <script>
             $(window).scroll(function(){
