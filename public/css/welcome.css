@@ -1,0 +1,45 @@
+.bg {
+    /*The image used*/
+    background-image: url("../img/block1.jpg");
+
+    /*Full height*/
+    height: 100vh;
+
+    /*Center and scale the image nicely*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-footer {
+    /*The image used*/
+    background-image: url("../img/question1.jpg");
+
+    /* Full height*/
+    height: 100vh;
+
+    /*Center and scale the image nicely*/
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 580px;
+    background-color: white;
+}
+
+.bg-about{
+    /*The image used*/
+    background-image: url("../img/block3.jpg");
+
+    /* Full height*/
+    height: 80vh;
+
+    /*Center and scale the image nicely*/
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-color: #bfecd5;
+    margin-bottom: 0;
+}
+
+.bg-transparent.scrolled {
+    background-color: #FFFFFF !important;
+}
