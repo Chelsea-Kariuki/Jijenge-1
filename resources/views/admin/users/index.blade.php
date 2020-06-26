@@ -48,12 +48,12 @@
                                         <td>{{ $user->phone_number }}</td>
                                         <td>{{ implode(', ', $user->roles()->get()->pluck('name')->toArray()) }}</td>
                                         <td>
-                                            <a href="{{ route('admin.users.edit', $user->id) }} "><button class="btn btn-sm btn-success float-left"><i class="fas fa-user-edit"></i></button></a>
+                                            <a href="{{ route('admin.users.edit', $user->id) }} "><button class="btn btn-flat btn-sm btn-success float-left"><i class="fas fa-user-edit"></i></button></a>
 
                                             <form action="{{ route('admin.users.destroy', $user) }}" method="POST" class="float-left">
                                                 @csrf
                                                 {{ method_field('DELETE') }}
-                                                <button type="submit" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i></button>
+                                                <button type="submit" class="btn btn-sm btn-flat btn-danger"><i class="far fa-trash-alt"></i></button>
                                             </form>
                                         </td>
                                     </tr>

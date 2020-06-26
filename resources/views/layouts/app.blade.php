@@ -9,24 +9,14 @@
 
     <title>{{ config('app.name', 'Jijenge Investments') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="background-color: #EEEEEE; text-align: center">
-    <div id="app">
-        <main class="py-4">
-            <div class="" align="center">
-                @include('partials.alerts')
-                @yield('content')
-            </div>
-        </main>
-    </div>
+
+<body class="hold-transition login-page">
+    @yield('content')
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>
+

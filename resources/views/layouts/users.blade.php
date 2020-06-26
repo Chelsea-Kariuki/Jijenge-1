@@ -81,6 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item">
                     <a class="nav-link" data-widget="control-sidebar" data-slide="true" role="button">
                         <img src="/img/profile.png" alt="Logo" class="brand-image img-circle elevation-1" style="opacity: .8">
+                        <span class="brand-text font-weight-light">{{ Auth::user()->name }}</span>
                     </a>
                 </li>
             </ul>
