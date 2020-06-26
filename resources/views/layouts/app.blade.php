@@ -22,7 +22,7 @@
 <body style="background-color: #EEEEEE; text-align: center">
     <div id="app">
         <main class="py-4">
-            <div class="container" align="center">
+            <div class="" align="center">
                 @include('partials.alerts')
                 @yield('content')
             </div>

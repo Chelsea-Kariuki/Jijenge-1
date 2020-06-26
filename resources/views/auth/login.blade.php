@@ -5,14 +5,13 @@
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="login-logo mt-5">
-                <h1 style="font-family: 'Arial';">Jijenge Investments</h1><br>
+                <h3 style="font-family: 'Bahnschrift'; font-weight: lighter; text-align: center">Jijenge Investments</h3>
             </div>
             <div style="background-color: transparent">
                 <form method="POST" action="{{ route('login') }}" >
                     @csrf
-                    <div class="login-box elevation-1" style="height: 500px">
-                        <div class="card" style="width: 400px;">
-                            <div class="card-body login-card-body" style="display: inline-block; text-align: center; -webkit-border-radius: 55px; border-radius: 55px;">
+                        <div class="card elevation-1" style="width: 350px; height: 350px">
+                            <div class="card-body login-card-body" style="">
                                 <div class="form-group row">
                                  <div class="col-md-12">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" style="text-align: center" placeholder="Enter e-mail address" value="{{ old('email') }}" required autocomplete="email" autofocus
@@ -41,8 +40,8 @@
                                 </div>
 
                                 <div class="form-group row m-0">
-                                    <div class="col-md-6 mt-1">
-                                        <div class="form-check">
+                                    <div class="col-md-10 mt-1">
+                                        <div class="form-check" style="float: left">
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                             <label class="form-check-label" for="remember">
@@ -51,22 +50,31 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row m-0 mt-1">
-                                        <button type="submit" class="btn" style="background-color: #0cc170; padding-left: 2rem; padding-right: 2rem; color: white">
+                                <div class="row m-0">
+                                        <button type="submit" class="btn" style="background-color: #0cc170; margin: 0 auto; padding-left: 2rem; padding-right: 2rem; margin-top: 20px; color: white">
                                             {{ __('Login') }}
                                         </button><br>
                                     </div>
 
                                 <div class="form-group row mb-0">
                                     @if (Route::has('password.request'))
-                                        <a class="btn btn-link" style="color: #1e991a; float: right" href="{{ route('password.request') }}">
+                                        <a class="btn btn-link" style="color: #1e991a; float: right; margin-top: 30px" href="{{ route('password.request') }}">
                                             {{ __('Forgot Your Password?') }}
                                         </a>
                                     @endif
                                 </div>
+                                <div class="form-group row mb-0">
+                                    <p style="margin-left: 12px; margin-top: 0px">
+                                        Don't have an account?
+                                    @if (Route::has('password.request'))
+                                        <a class="btn btn-link" style="color: #1e991a;" href="{{ route('password.request') }}">
+                                            {{ __('Register with Us') }}
+                                        </a>
+                                    @endif
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </div>

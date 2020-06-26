@@ -202,7 +202,6 @@
         <div class="col-md-4">
             <div class="row h-20 m-5">
                 <div class="col-md-12">
-
                     <div class="row h-20 m-5">
                         <div class="col-md-4">
                             <i class="fas fa-phone" style="font-size: 300%"></i>
@@ -241,7 +240,7 @@
             <a href="https://twitter.com/JijengeI?s=08" style="font-size: 250%"><i class="m-2 fab fa-twitter"></i></a>
         </div>
     </div>
-    <span style="font-size: medium">© 2020 Copyright: All Rights Reserved | ijijenge@gmail.com</span>
+    <span style="font-size: medium">Copyright © 2020 <a href="#">Jijenge Investments</a>. All Rights Reserved | ijijenge@gmail.com</span>
 </div>
 
 <!-- Copyright -->
