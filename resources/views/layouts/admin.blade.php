@@ -10,12 +10,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>AdminLTE 3 | Starter</title>
+    <title>Jijenge Investments</title>
 
     <!-- Theme style -->
     <link rel="stylesheet" href="/css/app.css">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition layout-fixed layout-navbar-fixed sidebar-mini">
 <div class="wrapper">
 
     <!-- Navbar -->
@@ -137,6 +137,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Users</p>
                                 </a>
+                                <a href="{{ route('admin.topics.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Topics</p>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -196,5 +200,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- AdminLTE App -->
 <script src="/js/app.js"></script>
+<script src="/js/admin.js"></script>
 </body>
 </html>

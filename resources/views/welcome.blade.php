@@ -125,9 +125,11 @@
                        <strong>{{ $message }}</strong>
                     </span>
                 @enderror
+                <br>
 
                 <!-- Confirm Password -->
                 <input type="password" id="password-confirm" name="password_confirmation" class="form-control" placeholder="Confirm Password" required>
+                <br>
 
                 <!-- Send button -->
                 <button class="btn btn-block" style="background-color: #0cc170; color: white;" type="submit"><strong>Register</strong></button>
@@ -141,7 +143,7 @@
 <div class="row m-0">
     <div class="section_title" style="background-color: #bfecd5; height: 100vh; text-align: center">
         <div style="margin-top: 50px">
-            <h4><span><strong>ABOUT US</strong></span></h4>
+            <h4 style="color: #0cc170;"><span><strong>ABOUT US</strong></span></h4>
             <p class="mid_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible;
                         animation-duration: 1s; animation-delay: 0.5s; font-size: 200%; margin: 50px">Economic growth can be encouraged through the use of sound investments at the business level.</p>
             <p class="last_text wow fadeInUp" data-wow-duration="1s" data-wow-delay=".7s" style="visibility: visible;
