@@ -32,6 +32,7 @@ class DocumentsController extends Controller
         $document = $request->file('document');
         $path = $document->store('public/documents');
         $document = new Document();
+        $document->title = $request->get('document_title');
         $document->description = $request->get('document_description');
         $document->url = $path;
         $document->topic_id = $topic->id;

@@ -24,7 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
         <div class="container-fluid">
             <a href="{{ route('home') }}" class="navbar-brand">
-                <img src="/img/logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                <img src="/img/logo.png" alt="Jijenge Logo" class="brand-image img-circle elevation-3"
                      style="opacity: .8">
             </a>
 

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="login-box">
         <div class="login-logo">
             <p class="font-weight-bold">
@@ -11,7 +10,7 @@
         <!-- /.login-logo -->
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                <p class="login-box-msg"><strong>Sign in</strong> to start your session</p>
 
                 <form method="POST" action="{{ route('login') }}" >
                     @csrf
@@ -44,7 +43,6 @@
                             <strong>{{ $message }}</strong>
                         </span>
                         @enderror
-
                     </div>
 
                     <div class="row mb-3">
@@ -63,7 +61,7 @@
                         <!-- /.col -->
                     </div>
 
-                    <p class="mb-0">
+                    <p class="mb-1" align="center">
                         @if (Route::has('password.request'))
                             <a style="color: #1e991a;" href="{{ route('password.request') }}">
                                 Forgot Your Password?
@@ -74,5 +72,8 @@
             </div>
         </div>
     </div>
+    <p class="mb-1" align="center">
+        <a style="color: #000000;" href="{{ route('register') }}" class="text-center">I don't have an account</a>
+    </p>
 
 @endsection
