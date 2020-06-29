@@ -15,6 +15,6 @@ class Document extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'phone_number','password',
+        'description',
     ];
 }

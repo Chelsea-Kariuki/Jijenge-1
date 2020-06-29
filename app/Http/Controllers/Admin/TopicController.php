@@ -27,4 +27,5 @@ class TopicController extends Controller
         $topic->save();
         return redirect()->back()->with('message', 'Topic Created');
     }
+
 }

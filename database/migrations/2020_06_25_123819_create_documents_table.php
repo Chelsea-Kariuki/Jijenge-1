@@ -17,7 +17,8 @@ class CreateDocumentsTable extends Migration
             $table->id();
             $table->string('description');
             $table->string('url');
-            $table->bigInteger('topic_id');
+            $table->unsignedBigInteger('topic_id');
+            $table->foreign('topic_id')->references('id')->on('topics')->onDelete('cascade');
             $table->timestamps();
         });
     }

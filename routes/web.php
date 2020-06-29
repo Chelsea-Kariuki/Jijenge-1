@@ -27,10 +27,10 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admi
     Route::resource('users', 'UserController', ['except' => ['show','create','store']]);
     Route::resource('home', 'HomeController');
     Route::resource('documents', 'DocumentsController');
-
     Route::resource('topics', 'TopicController');
 });
 Route::get('admin/topics/{id}', 'Admin\TopicController@show')->name('show-topic')->middleware('can:admin');
+Route::post('admin/documents/{id}', 'Admin\DocumentsController@store')->name('store-document')->middleware('can:admin');
 
 
 

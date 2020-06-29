@@ -40,7 +40,7 @@
     <!-- /.Main content -->
 
     <div class="modal fade" id="modal-default">
-        <div class="modal-dialog">
+        <div class="modal-dialog ">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Default Modal</h4>
@@ -49,11 +49,28 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <form action="{{ route('store-document', $topic->id) }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group">
+                            <label for="topic_title" class="col-md-6 col-form-label">Topic description</label>
+                            <div class="">
+                                <textarea type="text" class="form-control" id="document_description" placeholder="Description" name="document_description" required>
+                                </textarea>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" name="document" id="document" required>
+                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save Document</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- /.modal-content -->
