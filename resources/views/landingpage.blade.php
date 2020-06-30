@@ -55,7 +55,7 @@
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div class="form-row">
                     <div class="col-12 col-md-12">
-                        <a href="{{ route('register') }}" class="btn btn-lg btn-primary">Sign up!</a>
+                        <a href="{{ route('register') }}" class="btn btn-lg btn-rounded aqua-gradient">Sign up!</a>
                     </div>
                 </div>
             </div>

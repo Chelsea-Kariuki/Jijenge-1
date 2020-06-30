@@ -61,6 +61,7 @@
                         </span>
                         @enderror
                     </div>
+
                     <div class="input-group mb-3">
                         <input id="password" type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" required>
 
@@ -76,6 +77,7 @@
                         </span>
                         @enderror
                     </div>
+
                     <div class="input-group mb-3">
                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm your password" required>
                         <div class="input-group-append">
@@ -84,20 +86,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-success">
-                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                                <label for="agreeTerms">I agree to the <a style="color: #1e991a;" href="#">terms</a>
+
+                    <div class="d-flex justify-content-around">
+                        <div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="agreeTerms" name="terms" value="agree" required>
+                                <label class="custom-control-label" for="agreeTerms">I agree to the <a style="color: #1e991a;" href="#">terms</a>
                                 </label>
                             </div>
                         </div>
-                        <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-success btn-block">Register</button>
-                        </div>
-                        <!-- /.col -->
                     </div>
+
+                    <button type="submit" class="btn btn-success btn-block my-3">Register</button>
                 </form>
             </div>
             <!-- /.form-box -->
@@ -105,6 +105,6 @@
     </div>
     <!-- /.register-box -->
     <p class="mb-1" align="center">
-        <a style="color: #000000;" href="{{ route('login') }}" class="text-center">I already have a membership</a>
+        <a style="color: #000000;" href="{{ route('login') }}" class="text-center">I already have an account</a>
     </p>
 @endsection
