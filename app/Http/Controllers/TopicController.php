@@ -14,6 +14,7 @@ class TopicController extends Controller
     // getting specific with $id
     public function show($id){
         $topic = Topic::findorfail( $id );
-        return view('user.topic.topic', ['topic' => ($topic) ]);
+        $documents = $topic->documents;
+        return view('user.topic.topic', ['topic' => ($topic), 'documents' => ($documents) ]);
     }
 }

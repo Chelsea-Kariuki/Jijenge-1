@@ -21,7 +21,7 @@
 
     <div class="content">
         <div class="container-fluid mb-3" align="right">
-            <button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-default">New Topic</button>
+            <button class="btn btn-primary waves-effect px-3" type="button" data-toggle="modal" data-target="#modal-default">New Topic</button>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
                                 <div class="card-tools">
                                     <!-- button with a dropdown -->
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                        <button type="button" class="btn btn-primary btn-sm px-2 waves-effect dropdown-toggle" data-toggle="dropdown">
                                             <i class="fas fa-bars"></i></button>
                                         <div class="dropdown-menu float-right" role="menu">
                                             <a href="{{ route('show-topic' , [ 'id' => $topic->id ]) }}" class="dropdown-item">View Topic</a>
@@ -50,10 +50,10 @@
                                             <a href="#" class="dropdown-item">Delete Topic</a>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse">
+                                    <button type="button" class="btn btn-primary px-3 btn-sm waves-effect" data-card-widget="collapse">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <button type="button" class="btn btn-danger btn-sm" data-card-widget="remove">
+                                    <button type="button" class="btn btn-danger px-3 btn-sm waves-effect" data-card-widget="remove">
                                         <i class="fas fa-times"></i>
                                     </button>
                                 </div>
@@ -79,11 +79,11 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-default">
-        <div class="modal-dialog">
+    <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog-centered modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Default Modal</h4>
+                    <h4 class="modal-title">Add Topic</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -97,13 +97,12 @@
                                 <input type="text" class="form-control" id="topic_title" placeholder="Topic Title" name="topic_title" required>
                             </div>
                         </div>
-                        <div class="modal-footer justify-content-between">
+                        <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Save New Topic</button>
                         </div>
                     </form>
                 </div>
-
             </div>
             <!-- /.modal-content -->
         </div>

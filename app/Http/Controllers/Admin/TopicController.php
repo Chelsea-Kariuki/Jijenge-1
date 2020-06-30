@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Document;
 use App\Http\Controllers\Controller;
 use App\Topic;
 use Illuminate\Http\Request;
@@ -15,7 +16,8 @@ class TopicController extends Controller
     // getting specific with $id
     public function show($id){
         $topic = Topic::findorfail( $id );
-        return view('admin.topic.topic', ['topic' => ($topic) ]);
+        $documents = $topic->documents;
+        return view('admin.topic.topic', ['topic' => ($topic),'documents' => ($documents) ]);
     }
 
     public function store(Request $request){

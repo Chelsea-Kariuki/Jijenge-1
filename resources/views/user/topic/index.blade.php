@@ -31,8 +31,9 @@
 
                             <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire
                                 soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                                <a href="{{ route('user-show-topic' , [ 'id' => $topic->id ]) }}" class="btn btn-md px-5 btn-outline-teal btn-flat" >Learn More</a>
                             </p>
-                            <a class="btn btn-primary" style="color: white" href="{{ route('user-show-topic' , [ 'id' => $topic->id ]) }}">Learn More</a>
+
                         </div>
                     @endforeach
                 </div>
