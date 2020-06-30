@@ -85,8 +85,8 @@
 <div class="bg">
     <div class="row m-0 h-100">
         <div class="col-lg-6 my-auto" align="center">
-            <h1 style="color: #0cc170; font-family: 'Helvetica'; font-size: 400%">Jijenge <br> Investments</h1>
-            <h1 style="color: #0cc170; font-family: 'Brush Script MT'; font-size: 400%; font-style: italic">The future lies in your hands</h1>
+            <h1 style="font-family: 'Helvetica'; font-size: 400%">Jijenge <br> Investments</h1>
+            <h1 style="font-family: 'Brush Script MT'; font-size: 400%; font-style: italic">The future lies in your hands</h1>
         </div>
         <div class="col-lg-6 my-auto">
             <!-- Default form contact -->

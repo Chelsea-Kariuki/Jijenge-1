@@ -9,18 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>Jijenge Investments</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
 
 </head>
 
@@ -28,9 +20,26 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="/img/logo.png" alt="Jijenge Logo" class="brand-image img-size-32 img-circle elevation-1" style="opacity: .8;">
+            <strong class="ml-1">Jijenge</strong>Investments
+        </a>
+        @if (Route::has('login'))
+            @auth
+                @can('admin')
+                    <a class="btn btn-primary" href="{{ url('admin/home') }}">
+                        <strong>Home</strong>
+                    </a>
+                @else
+                    <a class="btn btn-primary" href="{{ url('/home') }}">
+                        <strong>Home</strong>
+                    </a>
+                @endcan
+            @else
+                <a class="btn btn-primary" href="{{ route('login') }}">Training</a>
+            @endauth
+        @endif
     </div>
 </nav>
 
@@ -40,19 +49,15 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">
-                <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+                <h1 style="font-family: 'Helvetica'; font-size: 400%">Jijenge <br> Investments</h1>
+                <h1 style="font-family: 'Brush Script MT'; font-size: 400%; font-style: italic">The future lies in your hands</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <form>
-                    <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                        </div>
+                <div class="form-row">
+                    <div class="col-12 col-md-12">
+                        <a href="{{ route('register') }}" class="btn btn-lg btn-rounded aqua-gradient">Sign up!</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -65,7 +70,7 @@
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="icon-screen-desktop m-auto text-primary"></i>
+                        <i class="fas fa-desktop m-auto text-primary"></i>
                     </div>
                     <h3>Fully Responsive</h3>
                     <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
@@ -74,7 +79,7 @@
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="icon-layers m-auto text-primary"></i>
+                        <i class="fas fa-layer-group m-auto text-primary"></i>
                     </div>
                     <h3>Bootstrap 4 Ready</h3>
                     <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
@@ -83,7 +88,7 @@
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="icon-check m-auto text-primary"></i>
+                        <i class="far fa-check-circle m-auto text-primary"></i>
                     </div>
                     <h3>Easy to Use</h3>
                     <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
@@ -160,16 +165,11 @@
                 <h2 class="mb-4">Ready to get started? Sign up now!</h2>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                <form>
-                    <div class="form-row">
-                        <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                        </div>
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                        </div>
+                <div class="form-row">
+                    <div class="col-12 col-md-12">
+                        <a href="{{ route('register') }}" class="btn  btn-lg btn-primary">Sign up!</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -197,22 +197,22 @@
                         <a href="#">Privacy Policy</a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; Copyright © 2020. <a href="#">Jijenge Investments</a>. All Rights Reserved | ijijenge@gmail.com.</p>
             </div>
             <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
-                        <a href="#">
+                        <a href="https://www.facebook.com/Jijenge-investments-109255720822089/">
                             <i class="fab fa-facebook fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                        <a href="https://twitter.com/JijengeI?s=08">
+                            <i class="fab fa-twitter fa-2x fa-fw"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://www.instagram.com/p/CBNtm19APKM/?igshid=um5um0dpnj4b">
                             <i class="fab fa-instagram fa-2x fa-fw"></i>
                         </a>
                     </li>
@@ -223,8 +223,7 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/app.js"></script>
 
 </body>
 
