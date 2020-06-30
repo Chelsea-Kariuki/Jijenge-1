@@ -2,7 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Jijenge Investments</title>
 
@@ -202,6 +203,7 @@
         <div class="col-md-4">
             <div class="row h-20 m-5">
                 <div class="col-md-12">
+                    <h2>Contact Us</h2>
                     <div class="row h-20 m-5">
                         <div class="col-md-4">
                             <i class="fas fa-phone" style="font-size: 300%"></i>
