@@ -32,7 +32,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admi
 Route::get('admin/topics/{id}', 'Admin\TopicController@show')->name('show-topic')->middleware('can:admin');
 Route::post('admin/documents/{id}', 'Admin\DocumentsController@store')->name('store-document')->middleware('can:admin');
 
-
-
 Route::resource('userTopics', 'TopicController');
 Route::get('userTopics/{id}', 'TopicController@show')->name('user-show-topic');
+
+Route::get('userDocuments/{id}', 'DocumentController@index')->name('user-show-document');

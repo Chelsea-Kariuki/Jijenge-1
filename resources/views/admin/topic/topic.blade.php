@@ -22,7 +22,7 @@
 
     <div class="content">
         <div class="container-fluid mb-3" align="right">
-            <button class="btn btn-success" type="button" data-toggle="modal" data-target="#modal-default">New Document</button>
+            <button class="btn btn-primary px-3" type="button" data-toggle="modal" data-target="#modal-default">New Document</button>
         </div>
     </div>
 
@@ -30,35 +30,30 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                @foreach($documents as $document)
+                <div class="col-lg-3">
                     <!-- Card -->
                     <div class="card">
 
                         <!-- Card image -->
-                        <div class="view overlay">
-                            <img class="card-img-top" src=""
-                                 alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
 
                         <!-- Card content -->
                         <div class="card-body">
 
                             <!-- Title -->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title"><a>{{ $document->title }}</a></h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                                content.</p>
+                            <p class="card-text">{{ $document->description }}</p>
                             <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
+                            <a href="#" class="btn btn-md px-3 btn-primary">Button</a>
 
                         </div>
 
                     </div>
                     <!-- Card -->
                 </div>
+                @endforeach
             </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -66,43 +61,39 @@
     <!-- /.Main content -->
 
     <div class="modal fade" id="modal-default">
-        <div class="modal-dialog ">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Default Modal</h4>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Document</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <form action="{{ route('store-document', $topic->id) }}" method="post" enctype="multipart/form-data">
-                        @csrf
-                        <div class="form-group">
-                            <label for="topic_title" class="col-md-6 col-form-label">Topic description</label>
-                            <div class="">
-                                <textarea type="text" class="form-control" id="document_description" placeholder="Description" name="document_description" required>
-                                </textarea>
-                            </div>
+                <form action="{{ route('store-document', $topic->id) }}" method="post" enctype="multipart/form-data">
+                    <div class="modal-body mx-3">
+                            @csrf
+                            <div class="form-group">
+                                <label for="document_title" class="col-md-6 col-form-label">Document Title</label>
+                                <input type="text" class="form-control" id="document_title" placeholder="Title" name="document_title" required>
 
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" name="document" id="document" required>
-                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                <label for="document_description" class="col-md-6 col-form-label">Document description</label>
+                                <textarea type="text" class="form-control" id="document_description" placeholder="Description" name="document_description" required></textarea>
+
+
+                                <div class="file-field mt-4">
+                                    <input type="file" name="document" id="document" required>
                                 </div>
                             </div>
+                    </div>
 
-                        </div>
-                        <div class="modal-footer justify-content-between">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save Document</button>
-                        </div>
-                    </form>
-                </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Save Document</button>
+                    </div>
+                </form>
             </div>
             <!-- /.modal-content -->
         </div>
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-
 @endsection
