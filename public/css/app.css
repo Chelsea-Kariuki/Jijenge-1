@@ -31239,8 +31239,8 @@ h6 {
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url(/images/vendor/startbootstrap-landing-page/bg-masthead.jpg?20cbd480edd75dd476f3d16c6a763f28) no-repeat center center;
+  background-image: url(../img/block1.jpg);
+    background-repeat: no-repeat;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -31248,12 +31248,10 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
 }
 
 header.masthead h1 {
@@ -48352,7 +48350,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url(/images/vendor/startbootstrap-landing-page/bg-masthead.jpg?20cbd480edd75dd476f3d16c6a763f28) no-repeat center center;
+  background: url(../img/block1.jpg) no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -56960,7 +56958,7 @@ a.waves-light {
 }
 
 .navbar {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 , 0 2px 10px 0 ;
   font-weight: 300;
 }
 

@@ -19,7 +19,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-light bg-light static-top">
+<nav class="navbar">
     <div class="container-fluid">
         <a class="navbar-brand">
             <img src="/img/logo.png" alt="Jijenge Logo" class="brand-image img-size-32 img-circle elevation-1" style="opacity: .8;">
