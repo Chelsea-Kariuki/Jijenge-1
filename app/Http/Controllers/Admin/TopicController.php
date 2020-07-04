@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Document;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\TopicResource;
 use App\Topic;
 use Illuminate\Http\Request;
 
@@ -11,7 +12,8 @@ class TopicController extends Controller
 {
     // getting all
     public function index(){
-        return view('admin.topic.index', ['topics' => Topic::paginate(5)]);
+        $topic = Topic::with(['documents'])->paginate();
+        return view('admin.topic.index', ['topics' => TopicResource::collection($topic)]);
     }
     // getting specific with $id
     public function show($id){

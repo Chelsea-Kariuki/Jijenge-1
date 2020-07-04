@@ -63,7 +63,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-success btn-block my-3">Sign In</button>
+                    <button type="submit" class="btn btn-flat btn-success btn-block my-3">Sign In</button>
 
                 </form>
             </div>
