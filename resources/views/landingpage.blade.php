@@ -11,6 +11,43 @@
 
     <title>Jijenge Investments</title>
 
+    <style type="text/css">
+        h6 {
+            font-family: sans-serif;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+            font-size: large;
+            max-width: 200px;
+            position: relative;
+        }
+
+        h6::before {
+            content: "";
+            display: block;
+            width: 55px;
+            height: 1px;
+            background: #0cc170;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            z-index: auto;
+        }
+
+        h6::after {
+            content: "";
+            display: block;
+            width: 55px;
+            height: 1px;
+            background: #0cc170;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: auto;
+        }
+
+    </style>
+
     <!-- Bootstrap core CSS -->
     <link href="/css/app.css" rel="stylesheet">
 
@@ -64,34 +101,35 @@
 </header>
 
 <!-- Icons Grid -->
-<section class="features-icons bg-light text-center">
+<section class="features-icons text-center" style="background-color: #ffffff">
     <div class="container">
+        <div class="mt-0" style="margin-top: 0px; margin-bottom: 50px">
+            <h6 style="color: #0cc170"><span><strong>ABOUT US</strong></span></h6>
+        </div>
+
         <div class="row">
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="fas fa-desktop m-auto text-primary"></i>
+                        <i class="fas fa-video m-auto text-primary"></i>
                     </div>
-                    <h3>Fully Responsive</h3>
-                    <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                    <h3>Zoom Meetings</h3>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="fas fa-layer-group m-auto text-primary"></i>
+                        <i class="fas fa-book-open m-auto text-primary"></i>
                     </div>
-                    <h3>Bootstrap 4 Ready</h3>
-                    <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                    <h3>Documentation</h3>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                     <div class="features-icons-icon d-flex">
-                        <i class="far fa-check-circle m-auto text-primary"></i>
+                        <i class="fas fa-question m-auto text-primary"></i>
                     </div>
-                    <h3>Easy to Use</h3>
-                    <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                    <h3>Consultation</h3>
                 </div>
             </div>
         </div>
@@ -99,58 +137,27 @@
 </section>
 
 <!-- Image Showcases -->
-<section class="showcase">
-    <div class="container-fluid p-0">
+<section class="showcase" style="background-color: #d8dcd6">
+    <div class="p-0">
         <div class="row no-gutters">
-
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-zoom"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Fully Responsive Design</h2>
-                <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                <h2>Zoom Meetings</h2>
+                <p class="lead mb-0">We hold zoom meetings on a weekly basis to discuss various topics on investments, thus encouraging economic growth at business levels!</p>
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+            <div class="col-lg-6 text-white showcase-img docs showcase-docs"></div>
             <div class="col-lg-6 my-auto showcase-text">
-                <h2>Updated For Bootstrap 4</h2>
-                <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+                <h2>Documentation</h2>
+                <p class="lead mb-0">We provide free documentation that you can access at your own free time that will help broaden your knowledge on investments!</p>
             </div>
         </div>
         <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+            <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-question"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Easy to Use &amp; Customize</h2>
-                <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<section class="testimonials text-center bg-light">
-    <div class="container">
-        <h2 class="mb-5">What people are saying...</h2>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-                    <h5>Margaret E.</h5>
-                    <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-                    <h5>Fred S.</h5>
-                    <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-                    <h5>Sarah W.</h5>
-                    <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-                </div>
+                <h2>Consultations</h2>
+                <p class="lead mb-0">In case you might have a question on any issue regarding investments, you can send us an email and we will get back to you!</p>
             </div>
         </div>
     </div>
