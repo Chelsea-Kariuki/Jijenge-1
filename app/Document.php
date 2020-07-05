@@ -15,6 +15,6 @@ class Document extends Model
      * @var array
      */
     protected $fillable = [
-        'description','title'
+        'description','title','url'
     ];
 }

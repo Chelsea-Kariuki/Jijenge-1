@@ -14,6 +14,7 @@
 </head>
 
 <body class="hold-transition login-page">
+
     @yield('content')
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

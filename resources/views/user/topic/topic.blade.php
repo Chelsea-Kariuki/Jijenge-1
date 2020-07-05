@@ -24,30 +24,18 @@
     <div class="content">
         <div class="container-fluid">
             <div class="row">
-                @foreach($documents as $document)
-                    <div class="col-lg-3">
-                        <!-- Card -->
-                        <div class="card">
+                <div class="col-lg-12">
+                    <!-- Card -->
+                    @foreach($documents as $document)
+                        <div class="callout callout-info">
+                            <h5>{{ $document->title }}</h5>
 
-                            <!-- Card image -->
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                            <p>{{ $document->description }}</p>
 
-                            <!-- Card content -->
-                            <div class="card-body">
-                                <!-- Title -->
-                                <h4 class="card-title">{{ $document->title }}</h4>
-                                <!-- Text -->
-                                <p class="card-text">{{ $document->description }}</p>
-                                <!-- Link -->
-                                <a href="{{ route('user-show-document', [ 'id' => $document->id ]) }}" class="black-text d-flex justify-content-end">
-                                    <h6>Read more <i class="fas fa-angle-double-right"></i></h6>
-                                </a>
-                            </div>
-
+                            <a href="{{ route('user-show-document', [ 'id' => $document->id ]) }}" class="btn btn-md px-5 btn-outline-teal btn-flat">Learn More</a>
                         </div>
-                        <!-- Card -->
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
             <!-- /.row -->
         </div><!-- /.container-fluid -->

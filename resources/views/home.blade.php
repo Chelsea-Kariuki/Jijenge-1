@@ -19,57 +19,53 @@
     <!-- /.content-header -->
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
+            <!-- Card -->
+            <div class="card">
 
-            <div class="card card-primary card-outline">
-                <div class="card-header">
-                    <h5 class="card-title m-0">Learn How to Invest</h5>
-                </div>
+                <!-- Card image -->
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+                <!-- Card content -->
                 <div class="card-body">
-                    <h6 class="card-title">Special title treatment</h6>
 
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Documents</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <!-- Button -->
                     <a href="{{ route('userTopics.index') }}" class="btn btn-primary">Curriculum</a>
+
                 </div>
+
             </div>
+            <!-- Card -->
 
         </div>
         <!-- /.col-md-6 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
+            <!-- Card -->
+            <div class="card">
 
-            <div class="card card-primary card-outline">
-                <div class="card-header">
-                    <h5 class="card-title m-0">Welcome Back</h5>
-                </div>
+                <!-- Card image -->
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+                <!-- Card content -->
                 <div class="card-body">
-                    <h6 class="card-title">Special title treatment</h6>
 
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- Title -->
+                    <h4 class="card-title"><a>Zoom</a></h4>
+                    <!-- Text -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary">Zoom</a>
+
                 </div>
+
             </div>
-
-        </div>
-        <!-- /.col-md-6 -->
-    </div>
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
-
-            <div class="card card-primary card-outline">
-                <div class="card-header">
-                    <h5 class="card-title m-0">Welcome Back</h5>
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">Special title treatment</h6>
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+            <!-- Card -->
 
         </div>
         <!-- /.col-md-6 -->

@@ -74,7 +74,7 @@
                     </a>
                 @endcan
             @else
-                <a class="btn btn-primary" href="{{ route('login') }}">Training</a>
+                <a class="btn btn-flat btn-primary" href="{{ route('login') }}">Training</a>
             @endauth
         @endif
     </div>
@@ -92,7 +92,7 @@
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <div class="form-row">
                     <div class="col-12 col-md-12">
-                        <a href="{{ route('register') }}" class="btn btn-lg btn-rounded aqua-gradient">Sign up!</a>
+                        <a href="{{ route('register') }}" class="btn btn-lg btn-f blue-gradient">Sign up!</a>
                     </div>
                 </div>
             </div>

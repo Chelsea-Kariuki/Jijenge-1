@@ -30,15 +30,40 @@ class DocumentsController extends Controller
         $topic = Topic::findorfail( $id );
 
         $document = $request->file('document');
-        $path = $document->store('public/documents');
+        $path = $document->store('documents');
         $document = new Document();
+
+        $document->url = $path;
+
         $document->title = $request->get('document_title');
         $document->description = $request->get('document_description');
-        $document->url = $path;
         $document->topic_id = $topic->id;
         $document->save();
 
         return redirect()->back()->with('message', 'Document Created');
     }
-
 }
+/*
+ * $topic = Topic::findorfail( $id );
+
+
+        if($request->hasFile('document')){
+            $url = $request->file('document');
+            $documentname = time().'.'.$url->getClientOriginalExtension();
+            $url->move('../public/storage/documents/', $documentname);
+
+            $document = new Document([
+                'title'         =>  $request->get('document_title'),
+                'description'   =>  $request->get('document_description'),
+                'url'           =>  $documentname,
+            ]);
+            $document->topic_id = $topic->id;
+            $document->save();
+            return redirect()->back()->with('message', 'Document Created');
+
+        }
+        else {
+            return redirect()->back()->with('message', 'Document NOT Created');
+            // echo $request;
+        }
+ */

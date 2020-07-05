@@ -26,15 +26,14 @@
                 <div class="col-lg-12">
                     <!-- Card -->
                     @foreach($topics as $topic)
-                        <div class="callout callout-info">
-                            <h5>{{ $topic->title }}</h5>
-
-                            <p>There is a problem that we need to fix. A wonderful serenity has taken possession of my entire
-                                soul, like these sweet mornings of spring which I enjoy with my whole heart.
-                                <a href="{{ route('user-show-topic' , [ 'id' => $topic->id ]) }}" class="btn btn-md px-5 btn-outline-teal btn-flat" >Learn More</a>
+                        <blockquote class=" elevation-1">
+                            <p>
+                                <a href="{{ route('user-show-topic' , [ 'id' => $topic->id ]) }}">
+                                    <h5>{{ $topic->title }}</h5>
+                                </a>
                             </p>
-
-                        </div>
+                            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
                     @endforeach
                 </div>
             </div>
