@@ -50,6 +50,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/welcome.css" rel="stylesheet">
 
 </head>
 

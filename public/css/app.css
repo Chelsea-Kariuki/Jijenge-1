@@ -31237,14 +31237,6 @@ h6 {
   font-weight: 700;
 }
 
-header.masthead {
-  position: relative;
-  background-image: url(../img/invest7.jpg);
-    background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 
 header.masthead .overlay {
   position: absolute;
@@ -31317,15 +31309,6 @@ header.masthead h1 {
 .testimonials .testimonial-item img {
   max-width: 12rem;
   box-shadow: 0px 5px 5px 0px #adb5bd;
-}
-
-.call-to-action {
-  position: relative;
-  background-image: url(../img/invest7.jpg);
-    background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 
 .call-to-action .overlay {
@@ -48381,36 +48364,6 @@ header.masthead h1 {
   }
 }
 
-section.showcase .showcase-zoom {
-    position: relative;
-    background-color: #FFFFFF;
-    background-image: url(../img/zoom5.png);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
-section.showcase .showcase-docs {
-    position: relative;
-    background-color: #FFFFFF;
-    background-image: url(../img/books2.jpg);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
-section.showcase .showcase-question {
-    position: relative;
-    background-color: #FFFFFF;
-    background-image: url(../img/question1.jpg);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -48463,7 +48416,7 @@ section.showcase .showcase-question {
 
 .call-to-action {
   position: relative;
-  background-image: url(../img/invest7.jpg);
+  background-image: url(../img/bg4.jpg);
     background-repeat: no-repeat;
   background-size: cover;
   padding-top: 7rem;
@@ -48472,7 +48425,6 @@ section.showcase .showcase-question {
 
 .call-to-action .overlay {
   position: absolute;
-  background-color: #212529;
   height: 100%;
   width: 100%;
   top: 0;

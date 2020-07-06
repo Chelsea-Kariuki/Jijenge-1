@@ -1,48 +1,48 @@
-.bg {
-    /*The image used*/
-    background-image: url("../img/block1.jpg");
+section.showcase .showcase-zoom {
+    position: relative;
+    background-color: #FFFFFF;
+    background: url(../img/zoom5.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 
-    /*Full height*/
-    height: 100vh;
+section.showcase .showcase-docs {
+    position: relative;
+    background-color: #FFFFFF;
+    background: url(../img/books2.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 
-    /*Center and scale the image nicely*/
-    background-position: center;
+section.showcase .showcase-question {
+    position: relative;
+    background-color: #FFFFFF;
+    background: url(../img/question1.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+header.masthead {
+    position: relative;
+    background: url(../img/block2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
-.bg-footer {
-    /*The image used*/
-    background-image: url("../img/question1.jpg");
-
-    /* Full height*/
-    height: 100vh;
-
-    /*Center and scale the image nicely*/
-    background-position: right;
+.call-to-action {
+    position: relative;
+    background-color: #343a40;
+    background: url(../img/bg4.jpg);
     background-repeat: no-repeat;
-    background-size: 580px;
-    background-color: white;
-
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
-
-.bg-about{
-    /*The image used*/
-    background-image: url("../img/block3.jpg");
-
-    /* Full height*/
-    height: 80vh;
-
-    /*Center and scale the image nicely*/
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-color: #bfecd5;
-    margin-bottom: 0;
-}
-
-.bg-transparent.scrolled {
-    background-color: #FFFFFF !important;
-}
-
