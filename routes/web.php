@@ -25,12 +25,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admin')->group(function (){
     Route::resource('users', 'UserController', ['except' => ['show','create','store']]);
-    Route::resource('home', 'HomeController');
-    Route::resource('documents', 'DocumentsController');
+    Route::resource('home', 'HomeController', ['except' => ['show','create','store','destroy','update','edit']]);
     Route::resource('topics', 'TopicController');
+    Route::resource('documents', 'DocumentsController');
 });
-Route::get('admin/topics/{id}', 'Admin\TopicController@show')->name('show-topic')->middleware('can:admin');
 Route::post('admin/documents/{id}', 'Admin\DocumentsController@store')->name('store-document')->middleware('can:admin');
+
 
 Route::resource('userTopics', 'TopicController');
 Route::get('userTopics/{id}', 'TopicController@show')->name('user-show-topic');

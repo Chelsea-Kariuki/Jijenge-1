@@ -19,12 +19,12 @@
     <!-- /.content-header -->
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <!-- Card -->
             <div class="card">
 
                 <!-- Card image -->
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                <img class="card-img-top" src="/img/pdf3.jpg" alt="Card image cap">
 
                 <!-- Card content -->
                 <div class="card-body">
@@ -44,12 +44,12 @@
 
         </div>
         <!-- /.col-md-6 -->
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <!-- Card -->
             <div class="card">
 
                 <!-- Card image -->
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+                <img class="card-img-top" src="/img/zoom5.png" alt="Card image cap" height="232">
 
                 <!-- Card content -->
                 <div class="card-body">

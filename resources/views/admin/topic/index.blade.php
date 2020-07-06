@@ -45,7 +45,7 @@
                                         <button type="button" class="btn btn-primary btn-sm px-2 waves-effect dropdown-toggle" data-toggle="dropdown">
                                             <i class="fas fa-bars"></i></button>
                                         <div class="dropdown-menu float-right" role="menu">
-                                            <a href="{{ route('show-topic' , [ 'id' => $topic->id ]) }}" class="dropdown-item">View Topic</a>
+                                            <a href="{{ route('admin.topics.show', $topic->id ) }}" class="dropdown-item">View Topic</a>
                                             <div class="dropdown-divider"></div>
                                             <a href="#" class="dropdown-item">Delete Topic</a>
                                         </div>
@@ -60,7 +60,7 @@
                                 <!-- /. tools -->
                             </div>
                             <!-- /.card-header -->
-                            <div class="card-body pt-0">
+                            <div class="card-body pt-0 collapse">
                                 <!--The documents -->
                                 <div style="width: 100%">
 
@@ -72,7 +72,6 @@
                 </div>
             </div>
             <!-- /.row -->
-
         </div><!-- /.container-fluid -->
         <div class="col-md-12">
             {{ $topics->links() }}
@@ -80,29 +79,28 @@
     </div>
 
     <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog-centered modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Add Topic</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="{{ route('admin.topics.store') }}" method="post">
+        <div class="modal-dialog-centered modal-dialog modal-notify modal-info" role="document">
+            <div class="modal-content text-center">
+                <form action="{{ route('admin.topics.store') }}" method="post">
+                    <!--Header-->
+                    <div class="modal-header d-flex justify-content-center">
+                        <p class="heading">Add New Topic</p>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <i class="far fa-edit text-info fa-4x animated rotateIn mb-4"></i>
                         @csrf
-                        <div class="form-group row">
-                            <label for="topic_title" class="col-md-6 col-form-label">Topic Title</label>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="topic_title" placeholder="Topic Title" name="topic_title" required>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="topic_title" placeholder="Topic Title" name="topic_title" required>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save New Topic</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+
+                    <!--Footer-->
+                    <div class="modal-footer flex-center">
+                        <button type="submit" class="btn btn-info">Save New Topic</button>
+                    </div>
+                </form>
             </div>
             <!-- /.modal-content -->
         </div>
