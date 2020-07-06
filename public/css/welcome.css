@@ -1,33 +1,3 @@
-section.showcase .showcase-zoom {
-    position: relative;
-    background-color: #FFFFFF;
-    background: url(../img/zoom5.png);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
-section.showcase .showcase-docs {
-    position: relative;
-    background-color: #FFFFFF;
-    background: url(../img/books2.jpg);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
-section.showcase .showcase-question {
-    position: relative;
-    background-color: #FFFFFF;
-    background: url(../img/question1.jpg);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-}
-
 header.masthead {
     position: relative;
     background: url(../img/block2.jpeg);
@@ -37,10 +7,40 @@ header.masthead {
     padding-bottom: 8rem;
 }
 
+section.showcase .showcase-zoom {
+    position: relative;
+    background-color: #FFFFFF;
+    background-image: url(../img/zoom5.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+section.showcase .showcase-docs {
+    position: relative;
+    background-color: #FFFFFF;
+    background-image: url(../img/books2.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+section.showcase .showcase-question {
+    position: relative;
+    background-color: #FFFFFF;
+    background-image: url(../img/question1.jpg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    float: right;
+}
+
 .call-to-action {
     position: relative;
-    background-color: #343a40;
-    background: url(../img/bg4.jpg);
+    background: url(../img/bg6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 7rem;
