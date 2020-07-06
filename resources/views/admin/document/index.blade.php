@@ -6,12 +6,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Documents</h1>
+                    <h1 class="m-0 text-dark">{{ $document->title }}</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('admin.home.index') }}">Home</a></li>
-                        <li class="breadcrumb-item active">Documents Page</li>
+                        <li class="breadcrumb-item"><a href="{{ route('admin.topics.index') }}">Topics</a></li>
+                        <li class="breadcrumb-item"><a href="{{ URL::previous() }}">Documents</a></li>
+                        <li class="breadcrumb-item active">{{ $document->title }} Page</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -27,23 +29,8 @@
                     <!-- Calendar -->
                     <div class="card bg-gradient-primary">
                         <div class="card-header border-0">
-
-                            <h3 class="card-title">
-                                <i class="far fa-calendar-alt"></i>
-                                Topic
-                            </h3>
                             <!-- tools card -->
                             <div class="card-tools">
-                                <!-- button with a dropdown -->
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                        <i class="fas fa-bars"></i></button>
-                                    <div class="dropdown-menu float-right" role="menu">
-                                        <a href="#" class="dropdown-item">Add new document</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">Delete Topic</a>
-                                    </div>
-                                </div>
                                 <button type="button" class="btn btn-primary btn-sm" data-card-widget="collapse">
                                     <i class="fas fa-minus"></i>
                                 </button>
@@ -56,7 +43,11 @@
                         <!-- /.card-header -->
                         <div class="card-body pt-0">
                             <!--The calendar -->
-                            <div id="calendar" style="width: 100%"></div>
+                            <div id="calendar" style="width: 100%">
+                                <object data="{{ url('storage/'.$document->url) }}" type="application/pdf" frameborder="1" scrolling="auto" height="500rem" width="100%" >
+                                    <iframe src="https://docs.google.com/viewer?url=your_url_to_pdf&embedded=true" frameborder="1" scrolling="auto" height="790rem" width="100%" ></iframe>
+                                </object>
+                            </div>
                         </div>
                         <!-- /.card-body -->
                     </div>

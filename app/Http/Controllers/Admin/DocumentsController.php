@@ -40,7 +40,23 @@ class DocumentsController extends Controller
         $document->topic_id = $topic->id;
         $document->save();
 
-        return redirect()->back()->with('message', 'Document Created');
+        return redirect()->back()->with('message', 'Document Created Successfully');
+    }
+
+    public function show($id){
+        $document = Document::findorfail( $id );
+        return view('admin.document.index', ['document' => ($document) ]);
+    }
+
+    public function destroy(Document $document){
+
+        $document = Document::findOrFail($document->id);
+
+        //delete user
+        $document -> delete();
+
+        return redirect()->back()->with('message', 'Document Deleted Successfully');
+
     }
 }
 /*
