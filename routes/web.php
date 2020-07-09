@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,9 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 
 
@@ -32,7 +33,7 @@ Route::namespace('Admin')->prefix('admin')->name('admin.')->middleware('can:admi
 Route::post('admin/documents/{id}', 'Admin\DocumentsController@store')->name('store-document')->middleware('can:admin');
 
 
-Route::resource('userTopics', 'TopicController');
-Route::get('userTopics/{id}', 'TopicController@show')->name('user-show-topic');
+Route::resource('userTopics', 'TopicController')->middleware('verified');
+Route::get('userTopics/{id}', 'TopicController@show')->name('user-show-topic')->middleware('verified');
 
-Route::get('userDocuments/{id}', 'DocumentController@index')->name('user-show-document');
+Route::get('userDocuments/{id}', 'DocumentController@index')->name('user-show-document')->middleware('verified');
