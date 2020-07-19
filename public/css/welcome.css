@@ -36,7 +36,7 @@ section.showcase .showcase-question {
     background-size: 500px;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    float: right;
+    align: right;
 }
 
 .call-to-action {
