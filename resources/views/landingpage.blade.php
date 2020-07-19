@@ -114,7 +114,7 @@
                     <div class="features-icons-icon d-flex">
                         <i class="fas fa-video m-auto text-primary"></i>
                     </div>
-                    <h3>Zoom Meetings</h3>
+                    <h3>Trainings</h3>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -122,7 +122,7 @@
                     <div class="features-icons-icon d-flex">
                         <i class="fas fa-book-open m-auto text-primary"></i>
                     </div>
-                    <h3>Documentation</h3>
+                    <h3>Presentation</h3>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -143,14 +143,14 @@
         <div class="row no-gutters">
             <div class="col-lg-6 order-lg-2 text-white showcase-img showcase-zoom"></div>
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <h2>Zoom Meetings</h2>
-                <p class="lead mb-0">We hold zoom meetings on a weekly basis to discuss various topics on investments, thus encouraging economic growth at business levels!</p>
+                <h2>Trainings</h2>
+                <p class="lead mb-0">We hold trainings on a weekly basis on Zoom to discuss various topics on investments, thus encouraging economic growth at business levels!</p>
             </div>
         </div>
         <div class="row no-gutters">
             <div class="col-lg-6 text-white showcase-img docs showcase-docs"></div>
             <div class="col-lg-6 my-auto showcase-text">
-                <h2>Documentation</h2>
+                <h2>Presentation</h2>
                 <p class="lead mb-0">We provide free documentation that you can access at your own free time that will help broaden your knowledge on investments!</p>
             </div>
         </div>
