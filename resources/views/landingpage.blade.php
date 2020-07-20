@@ -12,34 +12,34 @@
     <title>Jijenge Investments</title>
 
     <style type="text/css">
-        h6 {
+        h5 {
             font-family: sans-serif;
             margin: auto;
             margin-bottom: 50px;
             text-align: center;
             font-size: large;
-            max-width: 200px;
+            max-width: 250px;
             position: relative;
         }
 
-        h6::before {
+        h5::before {
             content: "";
             display: block;
             width: 55px;
             height: 1px;
-            background: #0cc170;
+            background: #000;
             position: absolute;
             left: 0;
             top: 50%;
             z-index: auto;
         }
 
-        h6::after {
+        h5::after {
             content: "";
             display: block;
             width: 55px;
             height: 1px;
-            background: #0cc170;
+            background: #000;
             position: absolute;
             right: 0;
             top: 50%;
@@ -105,7 +105,7 @@
 <section class="features-icons text-center" style="background-color: #ffffff">
     <div class="container">
         <div class="mt-0" style="margin-top: 0px; margin-bottom: 50px">
-            <h6 style="color: #0cc170"><span><strong>ABOUT US</strong></span></h6>
+            <h5><span><strong>ABOUT US</strong></span></h5>
         </div>
 
         <div class="row">

@@ -29,14 +29,13 @@ section.showcase .showcase-docs {
 }
 
 section.showcase .showcase-question {
-    position: relative;
+    position: center;
     background-color: #FFFFFF;
     background-image: url(../img/question1.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    align: right;
 }
 
 .call-to-action {
